@@ -1,217 +1,143 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Hexo</title><meta name="author" content="Dianjun"><meta name="copyright" content="Dianjun"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="https://dianjunzhao.github.io/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:author" content="Dianjun">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://dianjunzhao.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-01-18 20:13:14'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-<meta name="generator" content="Hexo 6.0.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://DianjunZhao.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/01/04/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2022-01-04T15:09:43.476Z" itemprop="datePublished">2022-01-04</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/01/04/hello-world/">律师</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>上海靖予霖（天津）律师事务所主任</p>
-<h2 id="工作经历"><a href="#工作经历" class="headerlink" title="工作经历"></a>工作经历</h2><p>曾在天津市某法院刑事审判庭工作十余年，任审判员、审判长，承办并参与合议的传统类犯罪、职务类犯罪、经济犯罪、民刑交叉等各类刑事案件达千余件。转岗从事律师工作数年来，办理刑事、民商事诉讼案件及担任大型企业常年法律顾问，包括为多家跨国集团天津地区法律事务提供法律支持。此外，办理的多起经济犯罪、职务犯罪、涉黑涉恶犯罪等案件，取得了良好的辩护效果。</p>
-<h2 id="社会任职"><a href="#社会任职" class="headerlink" title="社会任职"></a>社会任职</h2><p>上海靖予霖（天津）律师事务所主任、党支部书记<br>靖霖刑事律师机构庭下辩护技能研究部 副主任<br>天津市律师协会刑事委员会委员<br>天津市律师协会政府法律顾问委员会会员<br>天津市法学会诉讼法学分会会员<br>天津市西青区政府法治智库成员<br>天津市某区人民检察院“社会第三方参与我院检查业务工作公益律师”<br>南开大学滨海学院法政学系实务导师<br>天津商业大学硕士研究生实践导师<br>国家二级心理咨询师</p>
-<h1 id="关于我们"><a href="#关于我们" class="headerlink" title="关于我们"></a>关于我们</h1><h2 id="律所简介"><a href="#律所简介" class="headerlink" title="律所简介"></a>律所简介</h2><p>上海靖予霖（天津）律师事务所坐落在天津市红桥区陆家嘴金融广场A座39层，办公面积800余平米，是靖霖刑事律师机构的第15家分支机构，是天津市目前专攻刑事业务的专业型律师事务所。汇聚北京大学、清华大学刑法学、刑事诉讼法学专业学者以及实务经验丰富的转岗人才，并与南开大学滨海学院、天津商业大学和中国民航大学等高校签约实践基地。此外，天金所积极参与法律援助工作，履行社会责任。天津分所秉承靖予霖“攻刑以专，相靖予霖”的所训，专门从事刑事业务，以总部研发的法律产品为核心竞争力，与天津市法学会诉讼法学分会等研究机构深度合作，结合天津实际，重点加强金融、走私、毒品、网络犯罪预防及其辩护的实践和研究，与靖霖刑事律师机构各所形成合力，为进一步推进刑事业务专业化做出努力。</p>
-<h2 id="总所（机构）"><a href="#总所（机构）" class="headerlink" title="总所（机构）"></a>总所（机构）</h2><p>上海靖予霖律师事务所  ，“靖霖”刑辩品牌创始人徐宗新律师领衔创建，系专门从事刑事法律服务（刑事辩护、刑事代理、刑事合规）的律师事务所。2019年11月，上海靖予霖律师事务所及分所与浙江靖霖律师事务所及分所共同成立靖霖刑事律师机构，并作为机构的总部，在上海、北京、杭州、南京、济南、昆明、武汉、贵阳、绍兴、义乌、天津、福州、苏州设有办公室，汇聚刑事律师300余人。 靖予霖”含义：“靖”为“在别人特别困难之时给予帮助”之意；“霖”为“甘霖”“恩泽”之意。律所以“攻刑以专，相靖予霖”为标准，致力发展刑事业务，练就高超的专业本领，给客户带来明白、充分且优质的法律务。</p>
-<p>争取将刑事业务做到极致。研发一套刑事法律服务产品，打造一支刑事专业律师队伍，为国家的人权保障、法治完善奉献绵薄之力。</p>
-<h1 id="新闻与文章"><a href="#新闻与文章" class="headerlink" title="新闻与文章"></a>新闻与文章</h1><h2 id="新闻"><a href="#新闻" class="headerlink" title="新闻"></a>新闻</h2><p>受天津绿动未来能源管理有限公司邀请，为该公司全体中层及以上管理干部开展了法制教育专题讲座<br>代表上海靖予霖（天津）律师事务所与天津品所酒店管理有限公司签署企所战略合作协议<br>出席第五届靖霖刑辩论坛<br>在南开大学滨海学院、天津商业大学、中国民航大学等多所高校开展讲座活动，获得了良好反响<br>受邀参加上门送服务、开门听意见”面对面座谈交流会<br>受邀出席并做主旨演讲于公检法司“同讲一堂课”开讲！节目<br>受邀参加智慧司法与诉讼程序、证据制度完善研讨会暨天津市法学会2020年诉讼法年会</p>
-<h2 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h2><h3 id="一、《量刑规范化的背景、目的以及对律师工作的意义》"><a href="#一、《量刑规范化的背景、目的以及对律师工作的意义》" class="headerlink" title="一、《量刑规范化的背景、目的以及对律师工作的意义》"></a>一、《量刑规范化的背景、目的以及对律师工作的意义》</h3><h3 id="二、《诈骗形式简介》"><a href="#二、《诈骗形式简介》" class="headerlink" title="二、《诈骗形式简介》"></a>二、《诈骗形式简介》</h3><h3 id="三、《最高人民法院，最高人民检察院，公安部关于办理电信网络诈骗等刑事案件适用法律若干问题的意见（二）》"><a href="#三、《最高人民法院，最高人民检察院，公安部关于办理电信网络诈骗等刑事案件适用法律若干问题的意见（二）》" class="headerlink" title="三、《最高人民法院，最高人民检察院，公安部关于办理电信网络诈骗等刑事案件适用法律若干问题的意见（二）》"></a>三、《最高人民法院，最高人民检察院，公安部关于办理电信网络诈骗等刑事案件适用法律若干问题的意见（二）》</h3><h1 id="业务范围"><a href="#业务范围" class="headerlink" title="业务范围"></a>业务范围</h1><p>无罪辩护：提供辩护服务，在法律范围内争取最优结果<br>取保候审：协助办理取保候审，提高取保候审成功率<br>律师会见：提供会见服务，及时了解情况<br>刑事和解：提供和解建议，协助进行刑事和解<br>不予起诉：争取还原案件真实，争取正义的到来<br>缓刑判决：争取缓刑判决，早日重获自由</p>
-<h1 id="全体机构"><a href="#全体机构" class="headerlink" title="全体机构"></a>全体机构</h1><p>上海（总部）：黄浦区中山东二路88号外滩SOHO，C座19层<br>           021-32206717<br>杭州：滨江区江南大道4760号亚科中心B座15、16层<br>           0571-87392937/87392255<br>南京：鼓楼区清江南路7号越洋国际商务中心5层<br>           025-86707788<br>北京：朝阳区东三环北路甲19号嘉盛中心23层<br>           010-82488010<br>义乌：西江路300号西江园B座1001室<br>           0579-85335539<br>贵阳：观山湖区长岭北路贵阳国际金融中心14号楼1511<br>           0851-84837890<br>济南：历下区经十路9777号鲁商国奥城4号楼15层<br>           0531-55569506<br>昆明：滇池路569号南亚风情第壹城国际B座19层1903室<br>           0871-67126852<br>武汉：武昌区中北路海山金谷大厦12楼<br>           027-87363402、81360262<br>绍兴：越城区延安东路654号新地大厦9楼<br>           0575-88623887<br>福州：台江区宁化街道振武路70号福晟钱隆广场34层<br>           0591-83802112<br>苏州：工业园区苏州大道东398号苏州太平金融大厦19层04单元<br>           0512-62560175<br>沈阳：铁西区卫工北街44号红梅文创园11号楼四层<br>           13700050050</p>
-<h1 id="刑事案例"><a href="#刑事案例" class="headerlink" title="刑事案例"></a>刑事案例</h1><p><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=104#_np=103_523">某正部级干部配偶受贿案。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=103#_np=103_523">河北省某法院办理谭某某涉嫌合同诈骗案，数额近2000万，最终变更罪名职务侵占，实报实销。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=102#_np=103_523">付某某诈骗案，量刑建议三年，经辩护量刑变更一年两个月，实报实销。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=101#_np=103_523">齐某诈骗案，指控诈骗罪不成立，以非法窃取、收买信用卡信息罪判处有期徒刑六个月，实报实销。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=100#_np=103_523">某区政府工作人员赵某某贪污案，量刑建议十一年，经辩护最终判处有期徒刑七年。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=99#_np=103_523">王某虚开增值税专用发票案，二审发回重审，经辩护免予刑事处罚。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=98#_np=103_523">董某故意伤害案，二审介入，经辩护二审法院改判减少刑期数月。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=97#_np=103_523">李某非法持有毒品、容留他人吸毒案，经辩护，公诉人当庭调整量刑建议。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=96#_np=103_523">吕某某非法吸收公众存款案，非吸金额11亿余元，经辩护最终判处有期徒刑四年六个月，并处罚金二十万元。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=95#_np=103_523">某区村干部万某挪用资金案，涉案500万元，经辩护最终判处有期徒刑两年六个月。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=94#_np=103_523">肖某强制猥亵案，审查起诉阶段签订认罪认罚量刑建议一年十个月，经辩护最终判处有期徒刑一年半。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=93#_np=103_523">李某妨害公务案，审查起诉阶段签订认罪认罚建议量刑一年半至两年，经辩护最终判处有期徒刑六个月。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=92#_np=103_523">某区公务人员张某妨害公务案，审查起诉阶段签订认罪认罚量刑建议八个月，经辩护最终判处有期徒刑六个月。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=91#_np=103_523">苗某职务侵占案，以盗窃罪批捕，实际数额近百万元，经辩护审查起诉阶段变更罪名为职务侵占罪，签署认罪认罚量刑建议两年半至三年半，经辩护最终判处有期徒刑二年。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=90#_np=103_523">张某寻衅滋事案，公诉机关量刑建议五年，经辩护最终判处有期徒刑一年六个月，实报实销。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=89#_np=103_523">邱某涉恶案，被控敲诈勒索罪，公诉机关量刑建议六至八年，经辩护变更罪名为非法侵入住宅罪，最终判处有期徒刑一年二个月。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=88#_np=103_523">王某生产、销售有毒、有害食品案，公安机关量刑建议五至七年，经辩护最终判处有期徒刑三年，检察院抗诉后维持原判。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=87#_np=103_523">河北省某法院前院长梁某受贿案，涉案数额500余万元，可能被判处十年以上有期徒刑，经辩护最终判处有期徒刑七年。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=86#_np=103_523">某小贷公司涉恶案，起诉书指控两起诈骗事实、一起寻衅滋事事实，经辩护，两起诈骗事实（单起量刑均为十年以上）均未予认定，最终法院以寻衅滋事罪判处。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=85#_np=103_523">付某故意毁坏财物数十万元–不捕后缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=84#_np=103_523">郑某某非法吸收公众存款案–缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=83#_np=103_523">王某某交通肇事案，交警认定为逃逸–不捕后获缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=82#_np=103_523">朱某某妨害公务案–捕后缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=81#_np=103_523">田某某聚众斗殴案–捕后缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=80#_np=103_523">孙某某合同诈骗案–捕后缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=79#_np=103_523">王某虚开增值税专用发票案–不捕后缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=78#_np=103_523">王某某走私普通货物物品案–缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=77#_np=103_523">杨某诈骗案–捕后获缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=76#_np=103_523">赵某某寻衅滋事案–不捕后缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=75#_np=103_523">某区多人冲击政府案，田某寻衅滋事案–捕后获缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=74#_np=103_523">焦某某虚开增值税专用发票案–介绍虚开增值税发票4000余万元，辩护人提出焦某某系从犯，退缴了全部违法所得，并愿意补缴税款100万元，最终法院判处缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=73#_np=103_523">杨某盗窃–打掉累犯获缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=72#_np=103_523">夏某非法经营案–缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=71#_np=103_523">陆某虚开增值税专用发票案–缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=70#_np=103_523">孙某电信诈骗案–缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=69#_np=103_523">内蒙古某地公务人员李某涉嫌敲诈勒索数百万元，最终变更罪名为强迫交易–捕后取保并获缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=68#_np=103_523">汤某强奸案–捕后获缓刑。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=67#_np=103_523">某处级干部高某受贿案：监察机关认定高某利用主管单位采购工作的便利，收受供应商好处费，涉嫌受贿罪，对高某采取留置措施。经辩护，在检察机关批捕阶段提交不予批准逮捕的律师意见，成功取保候审。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=66#_np=103_523">张某某诈骗案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=65#_np=103_523">张某（外籍）开设赌场案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=64#_np=103_523">徐某某挪用资金案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=63#_np=103_523">祝某假冒注册商标案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=62#_np=103_523">肖某组织领导传销案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=61#_np=103_523">刘某诈骗案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=60#_np=103_523">任某某诈骗案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=59#_np=103_523">王某某诈骗案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=58#_np=103_523">汝某某传播淫秽物品牟利案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=57#_np=103_523">刘某某诈骗案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=56#_np=103_523">袁某诈骗案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=55#_np=103_523">王某某合同诈骗案，数额近2000万–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=54#_np=103_523">孙某某抢劫案–辩护人提出，孙某某系聋哑人，其女友被被害人强奸未遂，其是为女友出气，是被害人出于亏心自愿给予钱财以示赔偿，并不是嫌疑人暴力取财，最终检察机关认为事实不清、证据不足不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=53#_np=103_523">孟某某敲诈勒索案–孟某涉嫌敲诈勒索240万，辩护人认为本案事实不清，证据不足，不能认定孟某某存在敲诈勒索行为，检察机关最终不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=52#_np=103_523">唐某某诈骗案–涉嫌电信诈骗28万余元，辩护人提出应当构成帮助信息网络犯罪活动罪，且有立功情节，检察机关不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=51#_np=103_523">林某诈骗案，数额近200万–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=50#_np=103_523">朴某帮助信息网络犯罪活动案-羁押九十天后取保候审。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=49#_np=103_523">党某某买卖国家机关证件案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=48#_np=103_523">王某故意伤害案–辩护人提出，王某系在校大学生，本案系被害人主动约架，且其有旧伤在身，伤情鉴定意见不应当作为定案根据，已经赔偿被害人损失，最终检察机关不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=47#_np=103_523">张某妨害公务案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=46#_np=103_523">某区企业家、前村干部等冯某、冯某某、王某聚众斗殴案–辩护人提出，本案案发时公安机关已经做出处理，且已经赔偿了被害人损失，被害人如今再次报案，是为了再次要求赔偿，有敲诈勒索的嫌疑，最终检察机关对三人均。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=45#_np=103_523">杨某伪造企业事业单位印章案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=44#_np=103_523">某区数年前宗某故意杀人案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=43#_np=103_523">魏某故意伤害案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=42#_np=103_523">文某虚开发票案–取保候审。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=41#_np=103_523">王某开设赌场案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=40#_np=103_523">孙某合同诈骗案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=39#_np=103_523">王某帮助信息网络犯罪活动案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=38#_np=103_523">齐某强奸案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=37#_np=103_523">邓某某诈骗案–不起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=36#_np=103_523">费某某开设赌场案–不起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=35#_np=103_523">邱某挪用资金案–撤回移送审查起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=34#_np=103_523">王某某诈骗案–不予批准逮捕。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=33#_np=103_523">单某某以危险方法危害公共安全案–撤案。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=32#_np=103_523">刘某、翟某某寻衅滋事案–不起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=31#_np=103_523">韩某某强奸案–经辩护，认定系被害人自愿与韩某某发生关系，最后公安机关撤案。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=30#_np=103_523">孙某某买卖身份证件案–不起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=29#_np=103_523">黄某某销售假药案–撤回移送审查起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=28#_np=103_523">安某某虚开发票案–撤案。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=27#_np=103_523">纪某合同诈骗案，数额近500万–不起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=26#_np=103_523">淳某某拒不支付劳动报酬案–撤案。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=25#_np=103_523">山西某地陈某强奸案，移送法院后退回检察院，最终撤案，对方以诬告陷害被追究责任。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=24#_np=103_523">某区陈某涉嫌合同诈骗1.2亿不捕后撤案。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=23#_np=103_523">康某销售假药案–撤回移送审查起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=22#_np=103_523">赵某某交通肇事案–不起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=21#_np=103_523">关某某寻衅滋事案-不起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=20#_np=103_523">史某合同诈骗案，数额2000余万–不起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=19#_np=103_523">陈某某帮助信息网络犯罪活动案–不起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=18#_np=103_523">某区民营企业家郜某、葛某、魏某虚开发票案–三人均不起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=17#_np=103_523">刘某非国家工作人员受贿案–不起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=16#_np=103_523">河北省某医院前院长郑某寻衅滋事案–不起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=15#_np=103_523">侯某故意伤害案–经辩护，检察机关意识到本案存在正当防卫问题，但鉴于已经达成刑事和解并民事赔偿，遂做相对不起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=14#_np=103_523">王某故意伤害案–不起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=13#_np=103_523">某演员王某强制猥亵案–不起诉。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=12#_np=103_523">滕某侵犯公民个人信息案–撤案。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=11#_np=103_523">刘某妨害公务案–撤案。</a><br><a target="_blank" rel="noopener" href="http://www.jyltianjin.com/nd.jsp?id=10#_np=103_523">王某寻衅滋事案–撤案。</a></p>
-<h1 id="联系我们"><a href="#联系我们" class="headerlink" title="联系我们"></a>联系我们</h1><p>电话：13920248688<br>固定电话：022-60716868<br>地址：红桥区北马路170号陆家嘴金融广场A座39层</p>
-<h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://dianjunzhao.github.io/2022/01/04/hello-world/" data-id="cky092gml00008jc95tpmhbph" data-title="律师" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/01/04/hello-world/">律师</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2022 Dianjun<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hexo</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2022/01/04/hello-world/" title="周娜 律师">周娜 律师</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-01-04T15:09:43.476Z" title="Created 2022-01-04 23:09:43">2022-01-04</time></span></div><div class="content">简介介绍上海靖予霖（天津）律师事务所主任
+工作经历曾在天津市某法院刑事审判庭工作十余年，任审判员、审判长，承办并参与合议的传统类犯罪、职务类犯罪、经济犯罪、民刑交叉等各类刑事案件达千余件。转岗从事律师工作数年来，办理刑事、民商事诉讼案件及担任大型企业常年法律顾问，包括为多家跨国集团天津地区法律事务提供法律支持。此外，办理的多起经济犯罪、职务犯罪、涉黑涉恶犯罪等案件，取得了良好的辩护效果。
+社会任职上海靖予霖（天津）律师事务所主任、党支部书记靖霖刑事律师机构庭下辩护技能研究部 副主任天津市律师协会刑事委员会委员天津市律师协会政府法律顾问委员会会员天津市法学会诉讼法学分会会员天津市西青区政府法治智库成员天津市某区人民检察院“社会第三方参与我院检查业务工作公益律师”南开大学滨海学院法政学系实务导师天津商业大学硕士研究生实践导师国家二级心理咨询师
+关于我们律所简介上海靖予霖（天津）律师事务所坐落在天津市红桥区陆家嘴金融广场A座39层，办公面积800余平米，是靖霖刑事律师机构的第15家分支机构，是天津市目前专攻刑事业务的专业型律师事务所。汇聚北京大学、清华大学刑法学、刑事诉讼法学专业学者以及实务 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Dianjun</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><div class="content"><a class="title" href="/2022/01/04/hello-world/" title="周娜 律师">周娜 律师</a><time datetime="2022-01-04T15:09:43.476Z" title="Created 2022-01-04 23:09:43">2022-01-04</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/01/"><span class="card-archive-list-date">January 2022</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-01-18T12:13:14.979Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Dianjun</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
