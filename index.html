@@ -1,22 +1,22 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Hexo</title><meta name="author" content="Dianjun"><meta name="copyright" content="Dianjun"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>周娜 律师</title><meta name="author" content="周娜"><meta name="copyright" content="周娜"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta property="og:type" content="website">
+<meta property="og:title" content="周娜 律师">
 <meta property="og:url" content="https://dianjunzhao.github.io/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
-<meta property="article:author" content="Dianjun">
+<meta property="og:site_name" content="周娜 律师">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://dianjunzhao.github.io/null">
+<meta property="article:author" content="周娜">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://dianjunzhao.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+<meta name="twitter:image" content="https://dianjunzhao.github.io/null"><link rel="shortcut icon" href="/img/icon.png"><link rel="canonical" href="https://dianjunzhao.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.css"><script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.10.5/dist/instantsearch.min.js" defer></script><script>var GLOBAL_CONFIG = { 
   root: '/',
-  algolia: undefined,
+  algolia: {"appId":"P582EM5TZI","apiKey":"5d803ecab64e01d0ed7d5f1da5d0b6e2","indexName":"qmblog","hits":{"per_page":6},"languages":{"input_placeholder":"搜索文章","hits_empty":"找不到您查询的内容：${query}","hits_stats":"找到 ${hits} 条结果，用时 ${time} 毫秒"}},
   localSearch: undefined,
   translate: undefined,
   noticeOutdate: undefined,
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
   copy: {
-    success: 'Copy successfully',
-    error: 'Copy error',
-    noSupport: 'The browser does not support'
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
   },
   relativeDate: {
     homepage: false,
@@ -24,31 +24,57 @@
   },
   runtime: '',
   date_suffix: {
-    just: 'Just',
-    min: 'minutes ago',
-    hour: 'hours ago',
-    day: 'days ago',
-    month: 'months ago'
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
   },
   copyright: undefined,
+  ClickShowText: undefined,
   lightbox: 'fancybox',
-  Snackbar: undefined,
-  source: {
-    justifiedGallery: {
-      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
-    }
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
   },
   isPhotoFigcaption: false,
   islazyload: false,
-  isAnchor: false
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: 'Hexo',
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
   isPost: false,
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2022-01-18 20:13:14'
+  postUpdate: '2022-01-20 17:04:08'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -61,83 +87,93 @@
   #post-meta time {
     display: inline !important
   }
-</style></noscript><script>(win=>{
-    win.saveToLocal = {
-      set: function setWithExpiry(key, value, ttl) {
-        if (ttl === 0) return
-        const now = new Date()
-        const expiryDay = ttl * 86400000
-        const item = {
-          value: value,
-          expiry: now.getTime() + expiryDay,
-        }
-        localStorage.setItem(key, JSON.stringify(item))
-      },
-
-      get: function getWithExpiry(key) {
-        const itemStr = localStorage.getItem(key)
-
-        if (!itemStr) {
-          return undefined
-        }
-        const item = JSON.parse(itemStr)
-        const now = new Date()
-
-        if (now.getTime() > item.expiry) {
-          localStorage.removeItem(key)
-          return undefined
-        }
-        return item.value
-      }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
     }
-  
-    win.getScript = url => new Promise((resolve, reject) => {
-      const script = document.createElement('script')
-      script.src = url
-      script.async = true
-      script.onerror = reject
-      script.onload = script.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        script.onload = script.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(script)
-    })
-  
-      win.activateDarkMode = function () {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = function () {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
-    
-          if (t === 'dark') activateDarkMode()
-          else if (t === 'light') activateLightMode()
-        
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
-    
-    const detectApple = () => {
-      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-        document.documentElement.classList.add('apple')
-      }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
     }
-    detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Hexo</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hexo</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/2022/01/04/hello-world/" title="周娜 律师">周娜 律师</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-01-04T15:09:43.476Z" title="Created 2022-01-04 23:09:43">2022-01-04</time></span></div><div class="content">简介介绍上海靖予霖（天津）律师事务所主任
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><meta name="generator" content="Hexo 6.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/null" onerror="onerror=null;src='/img/zhouna.png'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(/img/WechatIMG802.jpeg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">周娜 律师</a></span><span id="menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 文章</span></a></div></div><span class="close" id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site-title">周娜 律师</h1><div id="site-subtitle"><span id="subtitle"></span></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2022/01/20/hello-world/" title="个人简介">     <img class="post_bg" src="/img/WechatIMG800.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="个人简介"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/20/hello-world/" title="个人简介">个人简介</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-20T03:08:55.000Z" title="发表于 2022-01-20 11:08:55">2022-01-20</time></span></div><div class="content">个人简介介绍上海靖予霖（天津）律师事务所主任
 工作经历曾在天津市某法院刑事审判庭工作十余年，任审判员、审判长，承办并参与合议的传统类犯罪、职务类犯罪、经济犯罪、民刑交叉等各类刑事案件达千余件。转岗从事律师工作数年来，办理刑事、民商事诉讼案件及担任大型企业常年法律顾问，包括为多家跨国集团天津地区法律事务提供法律支持。此外，办理的多起经济犯罪、职务犯罪、涉黑涉恶犯罪等案件，取得了良好的辩护效果。
 社会任职上海靖予霖（天津）律师事务所主任、党支部书记靖霖刑事律师机构庭下辩护技能研究部 副主任天津市律师协会刑事委员会委员天津市律师协会政府法律顾问委员会会员天津市法学会诉讼法学分会会员天津市西青区政府法治智库成员天津市某区人民检察院“社会第三方参与我院检查业务工作公益律师”南开大学滨海学院法政学系实务导师天津商业大学硕士研究生实践导师国家二级心理咨询师
-关于我们律所简介上海靖予霖（天津）律师事务所坐落在天津市红桥区陆家嘴金融广场A座39层，办公面积800余平米，是靖霖刑事律师机构的第15家分支机构，是天津市目前专攻刑事业务的专业型律师事务所。汇聚北京大学、清华大学刑法学、刑事诉讼法学专业学者以及实务 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Dianjun</div><div class="author-info__description"></div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">1</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><div class="content"><a class="title" href="/2022/01/04/hello-world/" title="周娜 律师">周娜 律师</a><time datetime="2022-01-04T15:09:43.476Z" title="Created 2022-01-04 23:09:43">2022-01-04</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/01/"><span class="card-archive-list-date">January 2022</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">1</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-01-18T12:13:14.979Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By Dianjun</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2022/01/19/page1/" title="关于我们">     <img class="post_bg" src="/img/WechatIMG800.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于我们"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/19/page1/" title="关于我们">关于我们</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-19T02:32:07.000Z" title="发表于 2022-01-19 10:32:07">2022-01-19</time></span></div><div class="content">关于我们律所简介上海靖予霖（天津）律师事务所坐落在天津市红桥区陆家嘴金融广场A座39层，办公面积800余平米，是靖霖刑事律师机构的第15家分支机构，是天津市目前专攻刑事业务的专业型律师事务所。汇聚北京大学、清华大学刑法学、刑事诉讼法学专业学者以及实务经验丰富的转岗人才，并与南开大学滨海学院、天津商业大学和中国民航大学等高校签约实践基地。此外，天金所积极参与法律援助工作，履行社会责任。天津分所秉承靖予霖“攻刑以专，相靖予霖”的所训，专门从事刑事业务，以总部研发的法律产品为核心竞争力，与天津市法学会诉讼法学分会等研究机构深度合作，结合天津实际，重点加强金融、走私、毒品、网络犯罪预防及其辩护的实践和研究，与靖霖刑事律师机构各所形成合力，为进一步推进刑事业务专业化做出努力。
+总所（机构）上海靖予霖律师事务所，“靖霖”刑辩品牌创始人徐宗新律师领衔创建，系专门从事刑事法律服务（刑事辩护、刑事代理、刑事合规）的律师事务所。2019年11月，上海靖予霖律师事务所及分所与浙江靖霖律师事务所及分所共同成立靖霖刑事律师机构，并作为机构的总部，在上海、北京、杭州、南京、济南、昆明、武汉、贵阳、绍兴、义乌、天津 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2022/01/18/page2/" title="新闻与文章">     <img class="post_bg" src="/img/WechatIMG800.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="新闻与文章"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/18/page2/" title="新闻与文章">新闻与文章</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-18T06:24:29.000Z" title="发表于 2022-01-18 14:24:29">2022-01-18</time></span></div><div class="content">新闻与文章新闻受天津绿动未来能源管理有限公司邀请，为该公司全体中层及以上管理干部开展了法制教育专题讲座代表上海靖予霖（天津）律师事务所与天津品所酒店管理有限公司签署企所战略合作协议出席第五届靖霖刑辩论坛在南开大学滨海学院、天津商业大学、中国民航大学等多所高校开展讲座活动，获得了良好反响受邀参加上门送服务、开门听意见”面对面座谈交流会受邀出席并做主旨演讲于公检法司“同讲一堂课”开讲！节目受邀参加智慧司法与诉讼程序、证据制度完善研讨会暨天津市法学会2020年诉讼法年会
+文章一、《量刑规范化的背景、目的以及对律师工作的意义》周娜律师结合自己以往的职业经历谈到，量刑规范化的出台是为了统一法官的量刑思路和步骤，确定各个量刑情节的调节比例，以解决量刑不公正、不平衡问题。而作为我们辩护律师应当知道法官怎么想、怎么计算量刑，这样和法官沟通时，就比较容易取得法官的赞同和尊重，会取得事半功倍的辩护效果，从而实现当事人合法利益的最大化。周娜律师根据自己的工作经历，向大家分享了法官在量刑中考虑的主要因素。主要包括犯罪事实、被告人个人因素、其他因素等等。而作为辩护律师要积极创造其他从宽量刑情节，比如当庭认罪、赔 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2022/01/17/page3/" title="业务范围">     <img class="post_bg" src="/img/WechatIMG800.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="业务范围"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/17/page3/" title="业务范围">业务范围</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-17T06:25:34.000Z" title="发表于 2022-01-17 14:25:34">2022-01-17</time></span></div><div class="content">业务范围无罪辩护：提供辩护服务，在法律范围内争取最优结果取保候审：协助办理取保候审，提高取保候审成功率律师会见：提供会见服务，及时了解情况刑事和解：提供和解建议，协助进行刑事和解不予起诉：争取还原案件真实，争取正义的到来缓刑判决：争取缓刑判决，早日重获自由
+</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2022/01/16/page4/" title="全体机构">     <img class="post_bg" src="/img/WechatIMG800.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="全体机构"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/16/page4/" title="全体机构">全体机构</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-16T06:26:14.000Z" title="发表于 2022-01-16 14:26:14">2022-01-16</time></span></div><div class="content">全体机构上海（总部）黄浦区中山东二路88号外滩SOHO，C座19层电话：021-32206717杭州滨江区江南大道4760号亚科中心B座15、16层电话：0571-87392937/87392255南京鼓楼区清江南路7号越洋国际商务中心5层电话：025-86707788北京朝阳区东三环北路甲19号嘉盛中心23层电话：010-82488010义乌西江路300号西江园B座1001室电话：0579-85335539贵阳观山湖区长岭北路贵阳国际金融中心14号楼1511电话：0851-84837890济南历下区经十路9777号鲁商国奥城4号楼15层电话：0531-55569506昆明滇池路569号南亚风情第壹城国际B座19层1903室电话：0871-67126852武汉武昌区中北路海山金谷大厦12楼电话：027-87363402、81360262绍兴越城区延安东路654号新地大厦9楼电话：0575-88623887福州台江区宁化街道振武路70号福晟钱隆广场34层电话：0591-83802112苏州工业园区苏州大道东398号苏州太平金融大厦19层04单元电话：0512-62560175沈阳铁西区卫 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2022/01/15/page5/" title="刑事案例">     <img class="post_bg" src="/img/WechatIMG800.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="刑事案例"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/15/page5/" title="刑事案例">刑事案例</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-15T06:27:13.000Z" title="发表于 2022-01-15 14:27:13">2022-01-15</time></span></div><div class="content">刑事案例某正部级干部配偶受贿案。河北省某法院办理谭某某涉嫌合同诈骗案，数额近2000万，最终变更罪名职务侵占，实报实销。付某某诈骗案，量刑建议三年，经辩护量刑变更一年两个月，实报实销。齐某诈骗案，指控诈骗罪不成立，以非法窃取、收买信用卡信息罪判处有期徒刑六个月，实报实销。某区政府工作人员赵某某贪污案，量刑建议十一年，经辩护最终判处有期徒刑七年。王某虚开增值税专用发票案，二审发回重审，经辩护免予刑事处罚。董某故意伤害案，二审介入，经辩护二审法院改判减少刑期数月。李某非法持有毒品、容留他人吸毒案，经辩护，公诉人当庭调整量刑建议。吕某某非法吸收公众存款案，非吸金额11亿余元，经辩护最终判处有期徒刑四年六个月，并处罚金二十万元。某区村干部万某挪用资金案，涉案500万元，经辩护最终判处有期徒刑两年六个月。肖某强制猥亵案，审查起诉阶段签订认罪认罚量刑建议一年十个月，经辩护最终判处有期徒刑一年半。李某妨害公务案，审查起诉阶段签订认罪认罚建议量刑一年半至两年，经辩护最终判处有期徒刑六个月。某区公务人员张某妨害公务案，审查起诉阶段签订认罪认罚量刑建议八个月，经辩护最终判处有期徒刑六个月。苗某职务侵占案， ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2022/01/14/page6/" title="联系我们">     <img class="post_bg" src="/img/WechatIMG800.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="联系我们"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/01/14/page6/" title="联系我们">联系我们</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-14T06:27:59.000Z" title="发表于 2022-01-14 14:27:59">2022-01-14</time></span></div><div class="content">联系我们电话：13920248688固定电话：022-60716868地址：红桥区北马路170号陆家嘴金融广场A座39层
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/null" onerror="this.onerror=null;this.src='/img/zhouna.png'" alt="avatar"/><div class="author-info__name">周娜</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">7</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://www.scxsls.com/lawfirm/361"><i></i><span>律所主页</span></a></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">电话：13920248688/022-60716868</div></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/01/20/hello-world/" title="个人简介"><img src="/img/WechatIMG800.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="个人简介"/></a><div class="content"><a class="title" href="/2022/01/20/hello-world/" title="个人简介">个人简介</a><time datetime="2022-01-20T03:08:55.000Z" title="发表于 2022-01-20 11:08:55">2022-01-20</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/01/19/page1/" title="关于我们"><img src="/img/WechatIMG800.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于我们"/></a><div class="content"><a class="title" href="/2022/01/19/page1/" title="关于我们">关于我们</a><time datetime="2022-01-19T02:32:07.000Z" title="发表于 2022-01-19 10:32:07">2022-01-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/01/18/page2/" title="新闻与文章"><img src="/img/WechatIMG800.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="新闻与文章"/></a><div class="content"><a class="title" href="/2022/01/18/page2/" title="新闻与文章">新闻与文章</a><time datetime="2022-01-18T06:24:29.000Z" title="发表于 2022-01-18 14:24:29">2022-01-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/01/17/page3/" title="业务范围"><img src="/img/WechatIMG800.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="业务范围"/></a><div class="content"><a class="title" href="/2022/01/17/page3/" title="业务范围">业务范围</a><time datetime="2022-01-17T06:25:34.000Z" title="发表于 2022-01-17 14:25:34">2022-01-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/01/16/page4/" title="全体机构"><img src="/img/WechatIMG800.jpeg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="全体机构"/></a><div class="content"><a class="title" href="/2022/01/16/page4/" title="全体机构">全体机构</a><time datetime="2022-01-16T06:26:14.000Z" title="发表于 2022-01-16 14:26:14">2022-01-16</time></div></div></div></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">7</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-01-20T09:04:08.920Z"></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 周娜</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><div class="search-dialog__title" id="algolia-search-title">Algolia</div><div id="algolia-input-panel"><div id="algolia-search-input"></div></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-stats"></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div id="search-mask"></div></div><div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/algolia.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',()=> {preloader.endLoading()})</script><div class="js-pjax"><script>function subtitleType () {
+  if (true) { 
+    var typed = new Typed("#subtitle", {
+      strings: "上海靖予霖（天津）律师事务所主任".split(","),
+      startDelay: 300,
+      typeSpeed: 150,
+      loop: false,
+      backSpeed: 50
+    })
+  } else {
+    document.getElementById("subtitle").innerHTML = '上'
+  }
+}
+
+if (true) {
+  if (typeof Typed === 'function') subtitleType()
+  else $.getScript('https://cdn.jsdelivr.net/npm/typed.js/lib/typed.min.js', subtitleType)
+} else {
+  subtitleType()
+}</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script></div></body></html>
