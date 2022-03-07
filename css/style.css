@@ -823,6 +823,14 @@ button:-moz-focusring,
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
+.outers {
+background-color:#eceeed;
+}
+.outers1 {
+background-color:#000000;
+}
+
+
 legend {
   box-sizing: border-box /* 1 */;
   color: inherit /* 2 */;
